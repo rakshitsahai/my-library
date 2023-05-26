@@ -4,7 +4,7 @@ import { Navbar } from './layouts/navbar/Navbar';
 import { Footer } from './layouts/footer/Footer';
 import { HomePage } from './layouts/homepage/homepage';
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
       <Navbar/>
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
