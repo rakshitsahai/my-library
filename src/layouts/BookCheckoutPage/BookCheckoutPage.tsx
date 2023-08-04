@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import BookModel from "../../models/BookModel";
 import { SpinnerLoading } from "../utils/SpinnerLoading";
 import { StarsReview } from "../utils/StarsReview";
+import { CheckoutAndReviewBox } from "./CheckoutAndReviewBox";
 
 export const BookCheckoutPage = () => {
 
@@ -77,6 +78,7 @@ export const BookCheckoutPage = () => {
                             <StarsReview rating={4} size={32} />
                         </div>
                     </div>
+                    <CheckoutAndReviewBox book={book} mobile={false} />
                 </div>
             </div>
             <div className='container d-lg-none mt-5'>
@@ -95,6 +97,8 @@ export const BookCheckoutPage = () => {
                         <p className='lead'>{book?.description}</p>
                     </div>
                 </div>
+                <CheckoutAndReviewBox book={book} mobile={false} />
+                <hr />
             </div>
         </div>
     );
